@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620421548879",
+    "firebase_url": "https://extrack-49bd2-default-rtdb.firebaseio.com",
+    "project_id": "extrack-49bd2",
+    "storage_bucket": "extrack-49bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620421548879:android:93a7c4be0ab02cee11933a",
+        "android_client_info": {
+          "package_name": "com.example.expense_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620421548879-928albte2iurnba7d2mvo20t31f6mqhj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.expense_app",
+            "certificate_hash": "96ecfbc579299dd37d77df0247cbe88fff349cce"
+          }
+        },
+        {
+          "client_id": "620421548879-89gcd4o61d6u7omldol43hho3of1nbmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3eVh-XhICUhJn2qnoLeMUXswY54XMeR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620421548879-42s4l8ct04ij7uvqanro120djccg8vdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

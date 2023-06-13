@@ -141,6 +141,7 @@ class _HomePageState extends State<HomePage> {
                               print("Done");
                               Navigator.pop(context);
                               dataBaseService().editSalary(salaryController.text.trim(), user!.displayName!, context);
+                              Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => HomePage()), (route) => false);
                             },
                             child: Container(
                               alignment: Alignment.center,
@@ -168,13 +169,19 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 10,),
-              const Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.remove_circle_outline),
-                  SizedBox(width: 5,),
-                  Text("Clear Records")
-                ],
+              InkWell(
+                onTap: ()async{
+                  dataBaseService().deleteRecord();
+                  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => HomePage()), (route) => false);
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.remove_circle_outline),
+                    SizedBox(width: 5,),
+                    Text("Clear Records")
+                  ],
+                ),
               ),
               const SizedBox(height: 30,),
               Center(

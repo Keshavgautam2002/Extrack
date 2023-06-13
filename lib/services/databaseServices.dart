@@ -54,4 +54,15 @@ class dataBaseService{
     });
     return salary;
   }
+  
+  Future<void> deleteRecord()
+  async{
+
+    await FirebaseFirestore.instance.collection("admin").doc("expanse").collection("expanseList").snapshots().forEach((element) {
+      for(QueryDocumentSnapshot snapshot in element.docs)
+        {
+          snapshot.reference.delete();
+        }
+    });
+  }
 }
